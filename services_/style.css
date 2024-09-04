@@ -1,0 +1,156 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Slider Container */
+.slider-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* Slider Title */
+.slider-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Slider Wrapper */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* Slider Images */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Individual Slide */
+.slides img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures images fit the container */
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Left and Right Button Positions */
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Content Styling */
+.content {
+  padding: 20px 30px;
+  color: #000;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: justify; /* Justifies the text */
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .slider-container {
+    padding: 15px;
+  }
+
+  .slider-container h1 {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container h1 {
+    font-size: 1.5em;
+  }
+
+  .slides img {
+    margin-top: 20px;
+  }
+
+  .prev,
+  .next {
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .slider-container h1 {
+    font-size: 1.2em;
+    letter-spacing: -1px;
+  }
+
+  .prev,
+  .next {
+    padding: 3px;
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Ensure slider images fit on small screens without scrolling */
+  .slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintains aspect ratio while fitting the container */
+  }
+}

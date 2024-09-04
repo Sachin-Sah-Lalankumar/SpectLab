@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../nav/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../about_us/style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="../images/logo.png" alt="SpectLab Logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about_us/index.html">About Us</a></li>
+        <li><a href="../services_/index.html">Services</a></li>
+        <li><a href="../publications/index.html">Publications</a></li>
+        <li><a href="../newsletter/index.html">Newsletter</a></li>
+        <li><a href="../gallery/index.html">Gallery</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="../appointment/index.html">
+          <button class="btn sign__in">Book Appointment</button>
+        </a>
+      </div>
+    </nav>
+    <div class="contact">
+      <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <section id="location">
+        <h2>Our Location</h2>
+        <div class="location-content">
+          <div class="address">
+            <p>
+              Sr. No. 268, Behind Crystal Honda Showroom,
+              <br />
+            </p>
+
+            <p>Near Mantri Alpine and DSK Toyota, Mumbai - Banglore Highway,</p>
+            <p>Pune,Maharashtra</p>
+          </div>
+          <div
+            class="map-container"
+            onclick="window.open('https://www.google.com/maps/place/Spect+Lab/@18.5200673,73.7644112,17z/data=!3m1!4b1!4m6!3m5!1s0x1144c937d5eb704d:0x1a0ada3f9b145438!8m2!3d18.5200622!4d73.7669861!16s%2Fg%2F1q62bw11r?hl=en-US&entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D', '_blank');"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.4781699272884!2d73.76441121546774!3d18.5200622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1144c937d5eb704d%3A0x1a0ada3f9b145438!2sSpect%20Lab!5e0!3m2!1sen!2sin!4v1693640227957!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <img
+              src="../images/logo.png"
+              alt="SPECT LAB Logo"
+              class="footer-logo-img"
+            />
+          </div>
+          <div class="footer-address">
+            <p>
+              Sr. No. 268, Behind Crystal Honda Showroom,<br />
+              Near Mantri Alpine and DSK Toyota, Mumbai - Banglore Highway,<br />
+              Bavdhan, Pune - 411 021
+            </p>
+            <br />
+            <p>
+              Phone:
+              <br />
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:+9527070000"> +91-9527070000 </a>
+              <br />
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:+8975758509">+91-8975758509 </a>
+              <br />
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:+8975758566"> +91-8975758566 </a>
+            </p>
+            <p>
+              <br />
+              Email:
+              <br />
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:drsolav1@gmail.com">drsolav1@gmail.com </a>
+              <br />
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:kiran.ayre@spectlab.com">
+                kiran.ayre@spectlab.com
+              </a>
+            </p>
+          </div>
+          <div class="footer-hours">
+            <h2>Opening Hours</h2>
+            <p>Monday - Saturday: 7 AM to 7 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 SPECT LAB. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../nav/script.js"></script>
+    <script src="script.js"></script>
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script> -->
+  </body>
+</html>

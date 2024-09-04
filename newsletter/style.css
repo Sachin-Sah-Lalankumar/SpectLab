@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--white);
+  color: var(--text-dark);
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+main {
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.newsletter h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+}

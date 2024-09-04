@@ -1,0 +1,214 @@
+/* Basic Reset */
+:root {
+  --primary-color: #93c54b;
+  --primary-color-dark: #db6f35;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Bebas Neue", sans-serif;
+  --input-padding: 12px;
+  --input-border-radius: 6px;
+  --transition-speed: 0.3s;
+}
+/* Centering the contact form container */
+.contact-form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--input-border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center horizontally in its container */
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.contact-form-container h2 {
+  margin-top: 20px;
+  text-align: center;
+
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  font-size: 2rem;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: var(--input-padding);
+  border: 1px solid #ccc;
+  border-radius: var(--input-border-radius);
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  transition: border-color var(--transition-speed),
+    box-shadow var(--transition-speed);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(147, 197, 75, 0.5);
+  outline: none;
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: var(--input-padding);
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-family: var(--header-font);
+  border: none;
+  border-radius: var(--input-border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed),
+    transform var(--transition-speed);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+}
+/* Location Section Styling */
+/* Location Section Styling */
+#location {
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#location h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column; /* Stack the address and map vertically */
+  align-items: center;
+  gap: 30px; /* Space between the address and map */
+}
+
+.address {
+  font-size: 1.3em;
+  color: #555;
+  max-width: 600px; /* Limit the width of the address text */
+  text-align: center;
+  line-height: 1.6;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Constrain the maximum width of the map */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 500px; /* Set a fixed height for the map */
+  border: 0;
+  border-radius: 8px;
+}
+
+.map-container:active {
+  transform: scale(0.97); /* Slight shrink effect on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #location {
+    padding: 30px 20px;
+  }
+
+  #location h2 {
+    font-size: 2em;
+  }
+
+  .location-content {
+    gap: 20px;
+  }
+
+  .map-container iframe {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .address {
+    font-size: 1.2em;
+  }
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: var(--input-padding);
+  border: 1px solid #ccc;
+  border-radius: var(--input-border-radius);
+  font-family: "Arial", sans-serif;
+  font-size: 10px;
+  color: var(--text-dark);
+  transition: border-color var(--transition-speed),
+    box-shadow var(--transition-speed);
+}
+@media (max-width: 480px) {
+  #location h2 {
+    font-size: 1.8em;
+  }
+
+  .address {
+    font-size: 1.1em;
+  }
+
+  .map-container iframe {
+    height: 250px; /* Further adjust height for very small screens */
+  }
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    margin-top: 110px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 0.875rem;
+  }
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  font-size: 1rem;
+}

@@ -1,0 +1,126 @@
+/* Styles for the services section */
+#services {
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.section-head h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.posts-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.post-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover .img img {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.info i {
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service h3 {
+    font-size: 1.25rem;
+  }
+
+  .section-head h2 {
+    font-size: 1.75rem;
+  }
+
+  .content h4 {
+    font-size: 1.25rem;
+  }
+
+  .info {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #services {
+    padding: 20px 10px;
+  }
+
+  .posts-inner {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .content h4 {
+    font-size: 1.1rem;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info i {
+    margin-bottom: 5px;
+  }
+}

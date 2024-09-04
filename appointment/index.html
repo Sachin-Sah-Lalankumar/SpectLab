@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CT Scan Appointment Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../nav/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="../images/logo.png" alt="SpectLab Logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about_us/index.html">About Us</a></li>
+        <li><a href="../services_/index.html">Services</a></li>
+        <li><a href="../publications/index.html">Publications</a></li>
+        <li><a href="../newsletter/index.html">Newsletter</a></li>
+        <li><a href="../gallery/index.html">Gallery</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- --appointment -->
+    <div class="appointment-container">
+      <h1><i class="fas fa-stethoscope"></i> SpectLab Book Appointment</h1>
+      <form id="appointmentForm">
+        <div class="form-group">
+          <label for="fullName"><i class="fas fa-user"></i> Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <!-- New Gender Field -->
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="gender-options">
+            <label>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              <i class="fas fa-mars"></i> Male
+            </label>
+            <label>
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                required
+              />
+              <i class="fas fa-venus"></i> Female
+            </label>
+            <label>
+              <input type="radio" id="other" name="gender" value="other" />
+              <i class="fas fa-genderless"></i> Other
+            </label>
+          </div>
+        </div>
+        <!-- --Age -->
+        <div class="form-group">
+          <label for="age"><i class="fas fa-birthday-cake"></i> Age:</label>
+          <input type="number" id="age" name="age" min="0" max="120" required />
+        </div>
+
+        <div class="form-group">
+          <label for="appointmentDate"
+            ><i class="fas fa-calendar-alt"></i> Appointment Date:</label
+          >
+          <input
+            type="date"
+            id="appointmentDate"
+            name="appointmentDate"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="timeSlot"
+            ><i class="fas fa-clock"></i> Preferred Time Slot:</label
+          >
+          <select id="timeSlot" name="timeSlot" required>
+            <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+            <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+            <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="scanType"
+            ><i class="fas fa-x-ray"></i> Select Scan Type:</label
+          >
+          <select id="scanType" name="scanType" required>
+            <option value="Please_select">--Please Select Scan Type--</option>
+            <option value="THYROID SCAN">THYROID SCAN</option>
+            <option value="COLLOID LIVER SCAN">COLLOID LIVER SCAN</option>
+            <option value="GASTRIC EMPTYING">GASTRIC EMPTYING</option>
+            <option value="BONE SCAN">BONE SCAN</option>
+            <option value="LYMPHOSCINTIGRAPHY">LYMPHOSCINTIGRAPHY</option>
+            <option value="I-131 WHOLE BODY SCAN">I-131 WHOLE BODY SCAN</option>
+            <option value="HIDA SCAN">HIDA SCAN</option>
+            <option value="PARATHYROID SCAN">PARATHYROID SCAN</option>
+            <option value="THALLIUM SCAN">THALLIUM SCAN</option>
+            <option value="POST CAPTOPRIL RENOGRAM">
+              POST CAPTOPRIL RENOGRAM
+            </option>
+            <option value="DMSA RENAL SCAN">DMSA RENAL SCAN</option>
+            <option value="BRAIN SPECT">BRAIN SPECT</option>
+            <option value="CISTERNOGRAPHY">CISTERNOGRAPHY</option>
+            <option value="GI BLEED SCAN">GI BLEED SCAN</option>
+            <option value="MILK SCAN">MILK SCAN</option>
+            <option value="MIBG SCAN">MIBG SCAN</option>
+            <option value="MUGA SCAN">MUGA SCAN</option>
+            <option value="DACRYOSCINTIGRAPHY">DACRYOSCINTIGRAPHY</option>
+            <option value="GASTRIC EMPTYING SCAN">GASTRIC EMPTYING SCAN</option>
+            <option value="TESTICULAR TORSION SCAN">
+              TESTICULAR TORSION SCAN
+            </option>
+            <option value="DIRECT CYSTOGRAM">DIRECT CYSTOGRAM</option>
+            <option value="PET-CT IMAGING PROCEDURE(FDG)">
+              PET-CT IMAGING PROCEDURE(FDG)
+            </option>
+            <option value="RADIO IODINE THERAPY">RADIO IODINE THERAPY</option>
+            <option value="GALLIUM-68 PSMA SCAN">GALLIUM-68 PSMA SCAN</option>
+            <option value="DOTA SCAN">DOTA SCAN</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="additionalInfo">
+            <i class="fas fa-info-circle"></i> Additional Information:</label
+          >
+          <textarea id="additionalInfo" name="additionalInfo" rows="4">
+          </textarea>
+        </div>
+        <button type="submit">
+          <i class="fas fa-calendar-check"></i> Book Appointment
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <img
+              src="../images/logo.png"
+              alt="SPECT LAB Logo"
+              class="footer-logo-img"
+            />
+          </div>
+          <div class="footer-address">
+            <p>
+              Sr. No. 268, Behind Crystal Honda Showroom,<br />
+              Near Mantri Alpine and DSK Toyota, Mumbai - Banglore Highway,<br />
+              Bavdhan, Pune - 411 021
+            </p>
+            <br />
+            <p>
+              Phone:
+              <br />
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:+9527070000"> +91-9527070000 </a>
+              <br />
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:+8975758509">+91-8975758509 </a>
+              <br />
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:+8975758566"> +91-8975758566 </a>
+            </p>
+            <p>
+              <br />
+              Email:
+              <br />
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:drsolav1@gmail.com">drsolav1@gmail.com </a>
+              <br />
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:kiran.ayre@spectlab.com">
+                kiran.ayre@spectlab.com
+              </a>
+            </p>
+          </div>
+          <div class="footer-hours">
+            <h2>Opening Hours</h2>
+            <p>Monday - Saturday: 7 AM to 7 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 SPECT LAB. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../nav/script.js"></script>
+    <script src="../appointment/script.js"></script>
+    <script src="../landing_page/script.js"></script>
+  </body>
+</html>
